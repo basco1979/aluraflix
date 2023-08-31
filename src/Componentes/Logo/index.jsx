@@ -5,6 +5,7 @@ const Logo = styled.img`
     height: 40px;
     align-self: center;
     margin-left: 15px;
+    
 `
 
 export default Logo;

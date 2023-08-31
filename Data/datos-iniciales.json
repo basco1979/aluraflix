@@ -1,0 +1,88 @@
+{
+  "categorias": [
+    {
+      "titulo": "Frontend",
+      "link": "/",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Frontend",
+        "url": "/frontend"
+      },
+      "videos": [
+        {
+          "titulo": "Como utilizar el Display block, inline, inline-block",
+          "url": "https://youtu.be/AG2QssLpQzI?si=ZTzxxtgAbBrKv7pW"
+        },
+        {
+          "titulo": "Frameworks de Frontend",
+          "url": "https://youtu.be/UNeKzI2WHgQ?si=C79wkiv6ifIICDIa"
+        },
+        {
+          "titulo": "Animando un texto con HTML y CSS",
+          "url": "https://youtu.be/j71g5TiMA-M?si=4ahie1zJnfXQ_71k"
+        },
+        {
+          "titulo": "Accesibilidad",
+          "url": "https://youtu.be/ngMOsuZL-XE?si=oMIH5JwnvKwRX9fX"
+        }
+      ]
+    },
+        {
+      "titulo": "Innovación y Gestión",
+      "link": "/",
+      "cor": "#FE8C2A",
+      "link_extra": {
+        "text": "Innovación y Gestión",
+        "url": "/innovacionygestion"
+      },
+      "videos": [
+    {
+      "titulo": "Qué son las soft Skills",
+      "url": "https://youtu.be/vhwspfvI52k?si=HTqVjAlB5-lSrwpm"
+    },
+    {
+      "titulo": "Qué son las Metodologías Agiles",
+      "url": "https://youtu.be/6N3OkLCfK-0?si=JPca30qJbcAWvgP6"
+    },
+    {
+      "titulo": "Qué es SCRUM",
+      "url": "https://youtu.be/TttMvhj4uu4?si=Ign5QBpD9g2gjs2p"
+    },
+    {
+      "titulo": "Domina tu flujo de trabajo con Kanban",
+      "url": "https://youtu.be/ew1mwLviTWY?si=S_SVurFyjQzhVJl9"
+    }
+      ]
+        },
+    {
+      "titulo": "Backend",
+      "link": "/",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Backend",
+        "url": "/backend"
+      },
+      "videos": [
+    {
+      "titulo": "Cuándo usar LET, VAR y CONST",
+      "url": "https://youtu.be/PztCEdIJITY?si=J4S2VIKxd9izRD6v"
+    },
+    {
+      "titulo": "Banco de Datos MySQL",
+      "url": "https://youtu.be/8J0AoPZMVxA?si=bcxnAfVPYkuIgqHl"
+    },
+    {
+      "titulo": "Qué es SQL y NoSQL?",
+      "url": "https://youtu.be/cLLKVd5CNLc?si=6ae6F_kAxI6fvtmH"
+    },
+    {
+      "titulo": "Spring Framework",
+      "url": "https://youtu.be/t-iqt1b2qqk?si=e0RW9Olbuv9sLacP"
+    },
+    {
+      "titulo": "Descomplicando Base de Datos",
+      "url": "https://youtu.be/G1cDRqKuxpg?si=VYCe5KRqobzWsGxV"
+     }
+  ]
+}
+  ]}

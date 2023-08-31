@@ -6,12 +6,12 @@ export const BoxBanner = styled.div`
 `
 
 export const TextBoxBanner = styled.div`
-    margin-top: 21em;
     width: 40%;
     display: flex;
+    margin-top: 21em;
     flex-direction: column;
     margin-left: 1.5em;
-`
+     `
 
 export const TextBanner1 = styled.h1`
     font-size: 60px;

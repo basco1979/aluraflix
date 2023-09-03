@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
 
 const Header = styled.div`
-padding: 0 1.5em;
-    width: 1360px;
+    padding: 0 1.5em;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #000000;

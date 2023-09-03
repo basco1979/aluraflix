@@ -8,21 +8,23 @@ import {
 } from '../UI/variables';
 import logotipo from '../../assets/logotipo.png';
 import Footer from '../Footer';
+import { useLocation } from 'react-router-dom';
 
 const DefaultPage = (props) => {
-  const home = () => {
-    window.location.href = '/';
-  };
-
+  const home = () => (window.location.href = '/');
+  const url = useLocation();
   return (
     <>
       <Header>
         <Logo src={logotipo} alt="Logo Aluraflix" onClick={home}></Logo>
-        <Boton
-          $colorFondo={botonNuevoVideoBackground}
-          $borde={botonNuevoVideoBorder}>
-          Nuevo Video
-        </Boton>
+        { url.pathname === '/aluraflix/' && (
+          <Boton
+            $colorFondo={botonNuevoVideoBackground}
+            $borde={botonNuevoVideoBorder}
+            onClick={() => (window.location.href = '/aluraflix/video')}>
+            Nuevo Video
+          </Boton>
+        )}
       </Header>
       <div>{props.children}</div>
       <Footer>

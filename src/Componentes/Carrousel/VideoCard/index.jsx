@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { VideoCardContainer, VideoCardBanner } from './styles';
+import { VideoCardContainer } from './styles';
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL
@@ -19,9 +19,6 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
       style={{ borderColor: categoryColor || 'red' }}
       title={videoTitle}
     >
-      <VideoCardBanner style={{ backgroundColor: categoryColor }}>
-        {videoTitle}
-      </VideoCardBanner>
     </VideoCardContainer>
 
   );

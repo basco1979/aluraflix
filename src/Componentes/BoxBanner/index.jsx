@@ -3,12 +3,13 @@ import { styled } from "styled-components";
 export const BoxBanner = styled.div`
     display: flex;
     justify-content: space-between;
+    height: auto;
 `
 
 export const TextBoxBanner = styled.div`
     width: 40%;
     display: flex;
-    margin-top: 21em;
+    margin-top: 15em;
     flex-direction: column;
     margin-left: 1.5em;
      `
@@ -41,7 +42,7 @@ export const TextBanner3 = styled.p`
 `
 
 export const PlayerBanner = styled.div`
-    margin-top: 21em;
+    margin-top: 15em;
     width: 50%;
 `
 export const Player = styled.img`

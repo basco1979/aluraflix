@@ -9,7 +9,7 @@ function Carrousel({
   category,
 }) {
   const categoryTitle = category.titulo;
-  const categoryColor = category.cor;
+  const categoryColor = category.color;
   const { videos } = category;
   return (
     <VideoCardGroupContainer>

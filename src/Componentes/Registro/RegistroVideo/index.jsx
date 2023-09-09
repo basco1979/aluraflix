@@ -140,7 +140,7 @@ const RegistroVideo = () => {
                                 <ButtonForm tipo='submit' titulo='Guardar' styles={EstilosBtnGuardar} />
                                 <ButtonForm tipo='reset' titulo='Limpiar' styles={EstilosBtnLimpiar} manejarClic={()=>limpiarForm()}/>
                             </div>
-                            <ButtonLink to='/aluraflix/categoria' titulo='Nueva Categoría' styles={EstilosBtnNuevaCategoria}/>
+                            <ButtonLink to='/categoria' titulo='Nueva Categoría' styles={EstilosBtnNuevaCategoria}/>
                         </div>
 
                     </form>

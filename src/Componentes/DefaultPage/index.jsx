@@ -21,7 +21,7 @@ const DefaultPage = (props) => {
           <Boton
             $colorFondo={botonNuevoVideoBackground}
             $borde={botonNuevoVideoBorder}
-            onClick={() => (window.location.href = '/aluraflix/video')}>
+            onClick={() => (window.location.href = '/video')}>
             Nuevo Video
           </Boton>
         )}

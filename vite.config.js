@@ -6,7 +6,7 @@ export default defineConfig({
 
   base: '/aluraflix/',
   plugins: [react()],
-  build: {
+  /* build: {
     outDir: '../build'
-  }
+  } */
 })

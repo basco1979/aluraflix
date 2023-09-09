@@ -5,5 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
 
   base: '/aluraflix/',
-  plugins: [react()]
+  plugins: [react()],
+   build: {
+    outDir: './build'
+  } 
 })

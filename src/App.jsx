@@ -11,9 +11,9 @@ function App() {
       <GlobalStyle />
       <BrowserRouter>
       <Routes>
-        <Route path="/aluraflix" element={<Home />}></Route>
-        <Route path="/aluraflix/categoria" element={<RegistroCategoria />}/>
-        <Route path="/aluraflix/video" element={<RegistroVideo />}/>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/categoria" element={<RegistroCategoria />}/>
+        <Route path="/video" element={<RegistroVideo />}/>
         <Route path='*' element={<Page404/>} />
       </Routes>
       </BrowserRouter>

@@ -17,7 +17,7 @@ const DefaultPage = (props) => {
     <>
       <Header>
         <Logo src={logotipo} alt="Logo Aluraflix" onClick={home}></Logo>
-        { url.pathname === '/aluraflix/' && (
+        { url.pathname === '/' && (
           <Boton
             $colorFondo={botonNuevoVideoBackground}
             $borde={botonNuevoVideoBorder}

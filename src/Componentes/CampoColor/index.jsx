@@ -1,7 +1,10 @@
 /* eslint-disable react/prop-types */
-const CampoTexto = ({titulo, required, error, valor, actualizarValor }) => {
+import '../../../src/index.css'
+
+const CampoColor = ({titulo, required, error, valor, actualizarValor }) => {
     
     const manejarCambio = (e) => {
+        console.log('cambio',e.target.value)
         actualizarValor(e.target.value)
     }
 
@@ -11,6 +14,7 @@ const CampoTexto = ({titulo, required, error, valor, actualizarValor }) => {
             <label className='form__label' htmlFor="">{titulo}</label>
         <input
             required={required}
+            type='color'
             value={valor}
             onChange={manejarCambio}
         />
@@ -20,4 +24,4 @@ const CampoTexto = ({titulo, required, error, valor, actualizarValor }) => {
    )
 }
 
-export default CampoTexto
+export default CampoColor

@@ -1,8 +1,34 @@
-# React + Vite
+# Challenge ONE | React - AluraFlix
+---
+AluraFlix plataforma de videos, proyecto realizado para el curso de Desarrollo Web Front End en ALura - Oracle ONE Next Education
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center" >
+     <img width="800" heigth="400" src="https://user-images.githubusercontent.com/95771285/223715399-35b5f0c4-ebd1-4115-9187-9ec8661f1b2d.png">
 
-Currently, two official plugins are available:
+</p>
+## `Creando componentes`
+Sprint 1:
+Componentes creados para este Sprint:
+* Button 
+* Header
+* Banner
+* Footer
+* DefaultPage
+* Carrusel
+* Slider
+* Video Card
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sprint 2:
+* Componente para registro de nueva categoria.
+* Componente para registro de nuevo Video. 
+* Se implementa conexion con fake API
+
+
+## Biliotecas utilizadas
+* React-Router-Dom.
+* Styled-components.
+* Axios.
+
+## Autor:
+
+* [Alura - Oracle ONE](https://app.aluracursos.com/user/sebastian-basco)

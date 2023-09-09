@@ -1,103 +1,193 @@
 {
   "categorias": [
     {
-      "titulo": "Frontend",
-      "descripcion" : "Todos Los videos que estoy usando para aprender Frontend",
+      "id": 1,
+      "nombre": "Front End",
+      "descripcion": "Formación Front End de Alura Latam",
       "color": "#6BD1FF",
-      "videos": [
-        {
-          "titulo": "Como utilizar el Display block, inline, inline-block",
-          "url": "https://youtu.be/AG2QssLpQzI?si=ZTzxxtgAbBrKv7pW",
-          "imagen" : "",
-          "descripcion" : ""
-        },
-        {
-          "titulo": "Frameworks de Frontend",
-          "url": "https://youtu.be/UNeKzI2WHgQ?si=C79wkiv6ifIICDIa",
-          "imagen" : "",
-          "descripcion" : ""
-        },
-        {
-          "titulo": "Animando un texto con HTML y CSS",
-          "url": "https://youtu.be/j71g5TiMA-M?si=4ahie1zJnfXQ_71k",
-          "imagen" : "",
-          "descripcion" : ""
-        },
-        {
-          "titulo": "Accesibilidad",
-          "url": "https://youtu.be/ngMOsuZL-XE?si=oMIH5JwnvKwRX9fX",
-          "imagen" : "",
-          "descripcion" : ""
-        }
-      ]
+      "codigo": "123"
     },
     {
-      "titulo": "Innovación y Gestión",
-      "descripcion" : "Cómo mantener el equipo feliz y mucho mas",
-      "color": "#FE8C2A",
-      "videos": [
-        {
-          "titulo": "¿Sabes cómo organizar tu rutina de estudio?",
-          "url": "https://youtu.be/3mDnrL8YVaA?si=sOKNdJc254OCbRgR",
-          "imagen" : "https://img.youtube.com/vi/3mDnrL8YVaA/hqdefault.jpg",
-          "descripcion" : ""
-        },
-        {
-          "titulo": "Qué son las Metodologías Agiles",
-          "url": "https://youtu.be/6N3OkLCfK-0?si=JPca30qJbcAWvgP6",
-          "imagen" : "",
-          "descripcion" : ""
-        },
-        {
-          "titulo": "Qué es SCRUM",
-          "url": "https://youtu.be/TttMvhj4uu4?si=Ign5QBpD9g2gjs2p",
-          "imagen" : "",
-          "descripcion" : ""
-        },
-        {
-          "titulo": "Domina tu flujo de trabajo con Kanban",
-          "url": "https://youtu.be/ew1mwLviTWY?si=S_SVurFyjQzhVJl9",
-          "imagen" : "https://img.youtube.com/vi/ew1mwLviTWY/hqdefault.jpg",
-          "descripcion" : ""
-        }
-      ]
-    },
-    {
-      "titulo": "Backend",
-      "descripcion" : "Todos Los videos que estoy usando para aprender Backend",
+      "id": 2,
+      "nombre": "Back End",
+      "descripcion": "Formación Back End de Alura Latam",
       "color": "#00C86F",
-      "videos": [
-        {
-          "titulo": "Cuándo usar LET, VAR y CONST",
-          "url": "https://youtu.be/PztCEdIJITY?si=J4S2VIKxd9izRD6v",
-          "imagen" : "",
-          "descripcion" : ""
-        },
-        {
-          "titulo": "Banco de Datos MySQL",
-          "url": "https://youtu.be/8J0AoPZMVxA?si=bcxnAfVPYkuIgqHl",
-          "imagen" : "",
-          "descripcion" : ""
-        },
-        {
-          "titulo": "Qué es SQL y NoSQL?",
-          "url": "https://youtu.be/cLLKVd5CNLc?si=6ae6F_kAxI6fvtmH",
-          "imagen" : "",
-          "descripcion" : ""
-        },
-        {
-          "titulo": "Spring Framework",
-          "url": "https://youtu.be/t-iqt1b2qqk?si=e0RW9Olbuv9sLacP",
-          "imagen" : "",
-          "descripcion" : ""
-        },
-        {
-          "titulo": "Descomplicando Base de Datos",
-          "url": "https://youtu.be/G1cDRqKuxpg?si=VYCe5KRqobzWsGxV",
-          "imagen" : "",
-          "descripcion" : ""
-        }
-      ]
+      "codigo": "123"
+    },
+    {
+      "id": 3,
+      "nombre": "Innovación y Gestión",
+      "descripcion": "Formación Innovación y Gestión de Alura Latam",
+      "color": "#FE8C2A",
+      "codigo": "123"
+    },
+    {
+      "nombre": "SQL",
+      "descripcion": "Formación en SQL de Alura Latam",
+      "color": "#49055c",
+      "id": "4",
+      "codigo": "123"
+    },
+    {
+      "nombre": "JavaScript",
+      "descripcion": "Formación en JavaScript de Alura Latam",
+      "color": "#3853a3",
+      "id": "5",
+      "codigo": "123"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "nombre": "Cuando usar Let, var y const",
+      "urlVideo": "https://www.youtube.com/watch?v=PztCEdIJITY&t",
+      "urlImagen": "../assets/img/frontend1.png",
+      "descripcion": "A veces cuando estás programando sientes dificuldades en saber en qué momento utilizar let, var o const para declarar una variable? En este video te sacamos estas dudas, además de explicarte lo que es escopo global y local en JavaScript.",
+      "categoria": "Front End"
+    },
+    {
+      "id": 2,
+      "nombre": "¿ Qué es JavaScript",
+      "urlVideo": "https://www.youtube.com/watch?v=GJfOSoaXk4s&t",
+      "urlImagen": "../assets/img/frontend2.png",
+      "descripcion": "JavaScript: ¿qué es y cómo se hizo este lenguaje que genera muchas discusiones y debates entre la gente del área de desarrollo? Genesys y Gabriela nos hablan exactamente de esto en este Alura Tips.",
+      "categoria": "Front End"
+    },
+    {
+      "id": 3,
+      "nombre": "¿ Equipo Front End",
+      "urlVideo": "https://www.youtube.com/watch?v=rpvrLaBQwgg&t",
+      "urlImagen": "../assets/img/frontend3.png",
+      "descripcion": "¿Estás empezando tus estudios de Programación? ¿Te interesa todo lo que es la creación de Páginas Web Desarrollo de Softwares? ¿O estás pensando en cambiar de carrera y entrar a la maravillosa area de tecnología?.",
+      "categoria": "Front End"
+    },
+    {
+      "id": 4,
+      "nombre": "¿ Equipo Front End",
+      "urlVideo": "https://www.youtube.com/watch?v=UuAX5azcvDQ&t",
+      "urlImagen": "https://fakeimg.pl/500x300/?text=AluraFlix&font=roboto",
+      "descripcion": "¿Cómo un desarrollador Front End utiliza el Figma? ",
+      "categoria": "Front End"
+    },
+    {
+      "id": 5,
+      "nombre": "Spring Framework. ¿Qué es ?",
+      "urlVideo": "https://www.youtube.com/watch?v=t-iqt1b2qqk",
+      "urlImagen": "../assets/img/backend1.png",
+      "descripcion": "¿Busca un framework  para utilizar en sus proyectos? ¿Conoce Spring Framework? Spring es el framework más usado de Java. Nos ofrece herramientas que nos permiten crear proyectos más avanzados, con mejores prácticas y en menor tiempo. También posee una gran comunidad, lo que nos brinda muchísima documentación y ayuda.¿Quieres saber más?",
+      "categoria": "Back End"
+    },
+    {
+      "id": 6,
+      "nombre": "Qué es SQL y No SQL",
+      "urlVideo": "https://www.youtube.com/watch?v=cLLKVd5CNLc",
+      "urlImagen": "../assets/img/backend2.png",
+      "descripcion": "¿Cuáles son las diferencias entre una estructura de datos relacional (SQL) y una no relacional (NoSQL) y cuáles son las principales ventajas de cada una? Álvaro Camacho lo explica en este vídeo.",
+      "categoria": "Back End"
+    },
+    {
+      "id": 7,
+      "nombre": "Simplificando tu código en Java: Conoce los enum",
+      "urlVideo": "https://www.youtube.com/watch?v=EoPvlE85XAQ",
+      "urlImagen": "../assets/img/backend3.png",
+      "descripcion": "¿Escribir muchas variables del tipo constantes en Java te parece un proceso tedioso y que genera muchas líneas de código? En este Alura+ la instructora Génesys Rondón nos enseña a simplificar esta tarea usando un tipo de dato especial llamado enum.",
+      "categoria": "Back End"
+    },
+    {
+      "id": 9,
+      "nombre": "¿Qué son las Soft Skills?",
+      "urlVideo": "https://www.youtube.com/watch?v=vhwspfvI52k&t",
+      "urlImagen": "../assets/img/IG1.png",
+      "descripcion": "¿Qué son las Softskills y por qué es tan importante desarrollarlas para posicionarse en el mercado laboral? En este video de Alura Tips, Pri Stuani nos habla de las habilidades más buscadas por las empresas en sus profesionales y cómo las Soft Skills te ayudan en el día a día.",
+      "categoria": "Innovación y Gestión"
+    },
+    {
+      "id": 10,
+      "nombre": "7 Soft Skills más deseadas por las empresas",
+      "urlVideo": "https://www.youtube.com/watch?v=YhR7Zp8NUzE",
+      "urlImagen": "../assets/img/IG2.png",
+      "descripcion": "Seguro que ya escuchaste hablar sobre las Soft Skills, pero ¿sabes cuáles son las 7 más buscadas por las empresas? Quédate en este video con nosotros que vamos a explicarte la importancia de estas habilidades y porque son tan requeridas en el mercado laboral.",
+      "categoria": "Innovación y Gestión"
+    },
+    {
+      "id": 11,
+      "nombre": "¿Qué son las metodologias ágiles?",
+      "urlVideo": "https://www.youtube.com/watch?v=6N3OkLCfK-0",
+      "urlImagen": "../assets/img/IG3.png",
+      "descripcion": "En este video nuestra invitada, Andyara, nos explicará que són las muy conocidas hoy en día metodologias ágiles y nos comentará un poco sobre como aplicarlas y cuáles son los beneficios de utilizarlas en su equipo o empresa.",
+      "categoria": "Innovación y Gestión"
+    },
+    {
+      "nombre": "Java vs Javascript",
+      "urlVideo": "https://www.youtube.com/watch?v=GnztLZzd0Ew",
+      "urlImagen": "../assets/img/java1.png",
+      "descripcion": "Java vs Javascript",
+      "categoria": "JavaScript",
+      "id": "16",
+      "codigoSeguridad": "123"
+    },
+    {
+      "nombre": "Que es JavaScript",
+      "urlVideo": "https://www.youtube.com/watch?v=GJfOSoaXk4s",
+      "urlImagen": "../assets/img/java2.png",
+      "descripcion": "Que es JavaScript",
+      "categoria": "JavaScript",
+      "id": "17",
+      "codigoSeguridad": "123"
+    },
+    {
+      "nombre": "",
+      "urlVideo": "",
+      "urlImagen": "",
+      "descripcion": "",
+      "categoria": "",
+      "codigoSeguridad": "",
+      "id": "f8845359-4b52-455c-961a-cb8f50e6c611"
+    },
+    {
+      "nombre": "",
+      "urlVideo": "",
+      "urlImagen": "https://fakeimg.pl/500x300/?text=AluraFlix&font=roboto",
+      "descripcion": "",
+      "categoria": "",
+      "codigoSeguridad": "",
+      "id": "226e3fb6-1373-4a98-b485-e3e3d7726f48"
+    },
+    {
+      "nombre": "",
+      "urlVideo": "",
+      "urlImagen": "https://fakeimg.pl/500x300/?text=AluraFlix&font=roboto",
+      "descripcion": "",
+      "categoria": "",
+      "codigoSeguridad": "",
+      "id": "dd52ec23-aed4-4b52-b451-65764f9f4af9"
+    },
+    {
+      "nombre": "Prueba",
+      "urlVideo": "https://youtu.be/hqBddtoMn-k?si=3ZoYSRxus-mQCXRc",
+      "urlImagen": "https://fakeimg.pl/500x300/?text=AluraFlix&font=roboto",
+      "descripcion": "Prueba",
+      "categoria": "Back End",
+      "codigoSeguridad": "123",
+      "id": "08c65899-e310-4d0f-b47c-443bf61eecb1"
+    },
+    {
+      "nombre": "Prueba",
+      "urlVideo": "https://youtu.be/hqBddtoMn-k?si=3ZoYSRxus-mQCXRc",
+      "urlImagen": "https://fakeimg.pl/500x300/?text=AluraFlix&font=roboto",
+      "descripcion": "Prueba",
+      "categoria": "Seleccione una categoria",
+      "codigoSeguridad": "123",
+      "id": "b96d79fa-9d4e-428c-920e-3a14d5a3292a"
+    },
+    {
+      "nombre": "mñlmñ",
+      "urlVideo": "{ñ{ñ.",
+      "urlImagen": "https://fakeimg.pl/500x300/?text=AluraFlix&font=roboto",
+      "descripcion": "ñ{llñ",
+      "categoria": "Back End",
+      "codigoSeguridad": "ñl{ñl",
+      "id": "8a836f81-a76e-4ddb-98ea-d80d3b87fe8f"
     }
   ]
 }

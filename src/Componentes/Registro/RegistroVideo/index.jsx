@@ -1,92 +1,157 @@
 /* eslint-disable no-unused-vars */
 import { useState } from 'react';
-import Boton from '../../Button';
 import CampoTexto from '../../CampoTexto'; //our Reusable component
+import '../../../index.css';
+import { enviarDatos } from '../../../../server/server';
+import { v4 as uuidv4 } from "uuid"
+import ListadoCategorias from '../../ListadoCategorias';
+import TextArea from '../../TextArea';
+import ButtonForm from '../../Button/ButtonForm';
+import ButtonLink from '../../Button/ButtonLink';
 import DefaultPage from '../../DefaultPage';
-import { useForm } from '../../Hooks/form-hooks';
 
+const RegistroVideo = () => {
+    const[nombre,setNombre] = useState('')
+    const[urlVideo,setUrlVideo] = useState('')
+    const[urlImagen,setUrlImagen] = useState('')
+    const[categoria,setCategoria] = useState('')
+    const[descripcion,setDescripcion] = useState('')
+    const[codigoSeguridad,setCodigoSeguridad] = useState('')
 
-const RegistroVideo = (props) => {
-  const [formState, inputHandler] = useForm({
-    titulo: { value: '' },
-    link: { value: '' },
-    imagen: { value: '' },
-    categoria: { value: '' },
-    descripcion: { value: '' },
-    codigo: { value: '' },
-  });
-
-  const submitHandler = (event) => {
-    event.preventDefault();
-    console.log(formState.inputs);
+  const submitHandler = (e) => {
+       e.preventDefault()
+        const id = uuidv4()
+        let datosAEnviar = {
+            nombre,
+            urlVideo,
+            urlImagen  : 'https://fakeimg.pl/500x300/?text=AluraFlix&font=roboto',
+            descripcion,
+            categoria,
+            codigoSeguridad,
+            id
+        }
+        enviarDatos('/videos',datosAEnviar)
+        limpiarForm()
   };
 
-  const [titulo, setTitulo] = useState('');
-  const [link, setLink] = useState('');
-  const [imagen, setImagen] = useState([]);
-  const [categoria, setCategoria] = useState([]);
-  const [descripcion, setDescripcion] = useState('');
-  const [codigo, setCodigo] = useState('');
+     const limpiarForm = () => {
+        setNombre('')
+        setUrlVideo('')
+        setUrlImagen('')
+        setCategoria('Seleccione una categoria')
+        setDescripcion('')
+    }
 
+     const EstilosBtnNuevaCategoria = {
+        color: '#ffffff',
+        background: '#2A7AE4',
+        fontSize: '21px',
+        fontWeight: '600',
+        width: '254px',
+        height: '54px',
+        borderRadius: '4px',
+        border: 'none',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
 
-  return (
-    <>
-      <DefaultPage>
-        <h1 style={{ textAlign: 'center', color: '#FFFFFF', margin: '1em 0' }}>
-          Nuevo Video
-        </h1>
-        <form onSubmit={submitHandler}>
-          <CampoTexto
-            id="titulo"
-            element="textarea"
-            type="text"
-            placeholder="Titulo"
-            rows="3"
-            onInput={inputHandler}
-          />
-          <CampoTexto
-            id="link"
-            element="textarea"
-            type="text"
-            placeholder="Link del video"
-            rows="3"
-            onInput={inputHandler}
-          />
-          <CampoTexto
-            id="imagen"
-            element="textarea"
-            type="text"
-            placeholder="Link Imagen del Video"
-            onInput={inputHandler}
-          />
-          
-          <CampoTexto
-            id="descripcion"
-            element="textarea"
-            type="text"
-            placeholder="Descripcion"
-            onInput={inputHandler}
-          />
-          <CampoTexto
-            id="codigo"
-            element="textarea"
-            type="text"
-            placeholder="Codigo de Seguridad"
-            rows="3"
-            onInput={inputHandler}
-          />
-          <div style={{ marginLeft: '1em' }}>
-            <Boton $colorFondo="#2A7AE4" $colorTexto="#FFFFFF" $borde="#2A7AE4">
-              Guardar
-            </Boton>
-            <Boton $colorFondo="#9E9E9E" $colorTexto="#000000" $borde="#9E9E9E">
-              Limpiar
-            </Boton>
-          </div>
-        </form>
-      </DefaultPage>
-    </>
-  );
+    const EstilosBtnGuardar = {
+        display: 'inline-block',
+        color: '#ffffff',
+        background: '#2A7AE4',
+        fontSize: '21px',
+        fontWeight: '600',
+        width: '180px',
+        height: '54px',
+        borderRadius: '4px',
+        border: 'none'
+    }
+
+    const EstilosBtnLimpiar = {
+        display: 'inline-block',
+        color: '#000000',
+        background: '#9E9E9E',
+        fontSize: '21px',
+        fontWeight: '600',
+        width: '180px',
+        height: '54px',
+        borderRadius: '4px',
+        border: 'none'
+    }
+
+ return (
+        <DefaultPage>
+            <main className="nuevovideo">
+                <div className="container">
+                    <h2 className="nuevovideo__titulo">Nuevo Video</h2>
+                    
+                    <form className='form' action="" onSubmit={submitHandler}>
+                        
+                        <CampoTexto 
+                            titulo='Título'
+                            mensaje="" 
+                            required={true} 
+                            valor={nombre} 
+                            actualizarValor={setNombre} 
+                        />
+                        
+                        <CampoTexto 
+                            titulo='Link del video' 
+                            mensaje="" 
+                            required={true} 
+                            valor={urlVideo} 
+                            actualizarValor={setUrlVideo} 
+                        />
+
+                        <CampoTexto 
+                            titulo='Link de la imagen del video' 
+                            mensaje="" 
+                            required={true} 
+                            valor={urlImagen} 
+                            actualizarValor={setUrlImagen} 
+                        />
+
+                        <ListadoCategorias
+                            titulo='Categoría' 
+                            mensaje="" 
+                            required={true} 
+                            valor={categoria} 
+                            actualizarValor={setCategoria} 
+                        />
+
+                        <TextArea
+                            titulo='Descripción' 
+                            mensaje='' 
+                            required={true} 
+                            valor={descripcion} 
+                            actualizarValor={setDescripcion} 
+                        />
+
+                        <CampoTexto 
+                            titulo='Código de seguridad' 
+                            mensaje="" 
+                            required valor={codigoSeguridad}
+                            actualizarValor={ setCodigoSeguridad } 
+                        />
+
+                         <div className="barra__botones">
+                            <div className="botones">
+                                <ButtonForm tipo='submit' titulo='Guardar' styles={EstilosBtnGuardar} />
+                                <ButtonForm tipo='reset' titulo='Limpiar' styles={EstilosBtnLimpiar} manejarClic={()=>limpiarForm()}/>
+                            </div>
+                            <ButtonLink to='/aluraflix/categoria' titulo='Nueva Categoría' styles={EstilosBtnNuevaCategoria}/>
+                        </div>
+
+                    </form>
+
+                </div>
+            </main>
+        </DefaultPage>
+        
+        
+        
+    )
 };
 
 export default RegistroVideo;
